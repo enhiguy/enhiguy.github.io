@@ -21,7 +21,7 @@ export default {
 <style scoped>
 img {
   max-width: 50%;
-  height: auto;
+  max-height: 50%;
 }
 h3 {
   margin: 40px 0 0;
