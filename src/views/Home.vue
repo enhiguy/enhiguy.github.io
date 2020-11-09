@@ -1,18 +1,18 @@
 <template>
   <div class="home">
     <img alt="My photo" src="../assets/me.jpg">
-    <HelloWorld msg="Hien Nguyen"/>
+    <Main msg="Hien Nguyen"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Main from '@/components/Main.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>
@@ -20,7 +20,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 img {
-  max-width: 20%;
+  max-width: 30%;
   height: auto;
 }
 h3 {
