@@ -20,8 +20,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 img {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 20%;
+  height: auto;
 }
 h3 {
   margin: 40px 0 0;
