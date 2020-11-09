@@ -7,8 +7,8 @@ const fs = require("fs");
     console.log("Building...");
     await execa("npm", ["run", "build"]);
     // Understand if it's dist or build folder
-    fs.writeFile('dist/CNAME', "hienguyen.com", function(err) {});
     const folderName = fs.existsSync("dist") ? "dist" : "build";
+    const myCNAME = fs.writeFile('dist/CNAME', "hienguyen.com", function(err) {});
     await execa("git", ["--work-tree", folderName, "add", "--all"]);
     await execa("git", ["--work-tree", folderName, "commit", "-m", "gh-pages"]);
     console.log("Pushing to gh-pages...");
